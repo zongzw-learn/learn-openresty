@@ -20,3 +20,6 @@ It's simple to run the stuff:
 
 More about openresty or nginx configuration, see the files under `conf.d` folder.
 
+## Test with Postman
+
+Use Postman to import the collection file: test/openresty.postman_collection.js. 
