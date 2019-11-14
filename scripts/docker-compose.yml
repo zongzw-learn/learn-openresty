@@ -8,8 +8,8 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./nginx-server.conf:/etc/nginx/conf.d/default.conf
-      - ./nginx-http.conf:/usr/local/openresty/nginx/conf/nginx.conf
+      - ${HOMEDIR}/conf.d/openresty/nginx-server.conf:/etc/nginx/conf.d/default.conf
+      - ${HOMEDIR}/conf.d/openresty/nginx-http.conf:/usr/local/openresty/nginx/conf/nginx.conf
     networks:
       restynet:
         ipv4_address: 172.245.18.2
